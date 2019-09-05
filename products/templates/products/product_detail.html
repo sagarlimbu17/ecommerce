@@ -1,0 +1,12 @@
+{%  load static %}
+<!DOCTYPE html>
+
+{%  extends 'base.html' %}
+
+{% block content %}
+    {{ object.title }}
+    {{ object.description }}
+    {%  if object.image %}
+        <img src="{{ object.image.url }}" alt="" class="image-fluid">
+    {% endif %}
+{% endblock %}
